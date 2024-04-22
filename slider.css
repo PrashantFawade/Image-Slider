@@ -41,3 +41,30 @@
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
+.carousel .card, .carousel .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    scroll-snap-align: start;
+    height: 310px;
+    list-style: none;
+    background-color: cornflowerblueb;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.img{
+    background-color: aqua;
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+}
+.img img{
+    height: 80px;
+    width: 80px;object-fit: cover;
+    border: 1px solid rgb(77, 74, 74);
+    border-radius: 50%;
+}
