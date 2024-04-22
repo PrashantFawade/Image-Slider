@@ -4,3 +4,40 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+.wrapper i{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(222, 181, 243);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255) ;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    transition: transform 0.1s linear;
+}
+#left{
+    left: -22px;
+}
+#right{
+    right: -22px;
+}
+.carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
